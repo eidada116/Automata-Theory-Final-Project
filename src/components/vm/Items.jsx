@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Vending-Machine() {
+function Items() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Vending-Machine() {
   )
 }
 
-export default Vending-Machine
+export default Items
