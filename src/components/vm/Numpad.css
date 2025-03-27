@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Container styling */
+.numpad-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa; /* Soft white */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Display screen */
+.display-screen {
+  width: 100%;
+  height: 50px;
+  background-color: #ececec; /* Light pearl gray */
+  color: #4a4a4a; /* Soft dark gray */
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 2px solid #d1d1d1;
+  font-weight: bold;
+  font-family: 'Inter', monospace;
+}
+
+/* Numpad grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+/* General button styling */
+.numpad-button {
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ffffff; /* Clean white */
+  color: #4a4a4a;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+}
+
+.numpad-button:hover {
+  background-color: #f1f1f1;
+}
+
+.numpad-button:active {
+  background-color: #e0e0e0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Special button styling */
+.numpad-button:nth-child(10) { /* DEL button */
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 10px;
+    font-weight: bold
+  }
+
+.numpad-button:nth-child(10):hover {
+  background-color: #f5c6cb;
+}
+
+.numpad-button:nth-child(12) { /* OK button */
+    background-color: #d4edda;
+    color: #155724;
+    font-size: 12px;
+    font-weight: bold
+}
+
+.numpad-button:nth-child(12):hover {
+  background-color: #c3e6cb;
+}
